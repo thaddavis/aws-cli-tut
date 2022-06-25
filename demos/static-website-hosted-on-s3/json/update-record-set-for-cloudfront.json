@@ -1,0 +1,15 @@
+{
+    "Comment": "update alias record for cloudfront to s3 bucket",
+    "Changes": [{
+        "Action": "UPSERT",
+        "ResourceRecordSet": {
+            "Name": "*.humblagga.com",
+            "Type": "A",
+            "AliasTarget":{
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": "d10b1707bggpsm.cloudfront.net",
+                "EvaluateTargetHealth": false
+            }
+        }
+    }]
+}

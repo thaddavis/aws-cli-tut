@@ -1,0 +1,47 @@
+{
+    "DomainName": "humblagga.com",
+    "DurationInYears": 1,
+    "AutoRenew": false,
+    "AdminContact": {
+        "FirstName": "***",
+        "LastName": "***",
+        "ContactType": "***",
+        "OrganizationName": "***",
+        "AddressLine1": "***",
+        "City": "***",
+        "State": "***",
+        "CountryCode": "***",
+        "ZipCode": "***",
+        "PhoneNumber": "***",
+        "Email": "***"
+    },
+    "RegistrantContact": {
+        "FirstName": "***",
+        "LastName": "***",
+        "ContactType": "***",
+        "OrganizationName": "***",
+        "AddressLine1": "***",
+        "City": "***",
+        "State": "***",
+        "CountryCode": "***",
+        "ZipCode": "***",
+        "PhoneNumber": "***",
+        "Email": "***"
+    },
+    "TechContact": {
+        "FirstName": "***",
+        "LastName": "***",
+        "ContactType": "***",
+        "OrganizationName": "***",
+        "AddressLine1": "***",
+        "City": "***",
+        "State": "***",
+        "CountryCode": "***",
+        "ZipCode": "***",
+        "PhoneNumber": "***",
+        "Email": "***"
+    },
+    "PrivacyProtectAdminContact": true,
+    "PrivacyProtectRegistrantContact": true,
+    "PrivacyProtectTechContact": true
+}

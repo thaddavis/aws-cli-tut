@@ -1,0 +1,15 @@
+{
+    "Comment": "Alias record for S3 bucket",
+    "Changes": [{
+        "Action": "CREATE",
+        "ResourceRecordSet": {
+            "Name": "RECORD_NAME",
+            "Type": "A",
+            "AliasTarget":{
+                "HostedZoneId": "HOSTED_ZONE_ID",
+                "DNSName": "S3_BUCKET_URL",
+                "EvaluateTargetHealth": false
+            }
+        }
+    }]
+}

@@ -1,0 +1,105 @@
+{
+    "CallerReference": "55e7e30d",
+    "Aliases": {
+        "Items": [
+            "humblagga.com",
+            "www.humblagga.com"
+          ],
+          "Quantity": 2
+    },
+    "DefaultRootObject": "index.html",
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id": "humblagga.com.s3-website-us-east-1.amazonaws.com",
+                "DomainName": "humblagga.com.s3-website-us-east-1.amazonaws.com",
+                "OriginPath": "",
+                "CustomHeaders": {
+                    "Quantity": 0
+                },
+                "CustomOriginConfig": {
+                    "OriginProtocolPolicy": "http-only",
+                    "HTTPPort": 80, 
+                    "HTTPSPort": 443
+                }
+            }
+        ]
+    },
+    "OriginGroups": {
+        "Quantity": 0
+    },
+    "DefaultCacheBehavior": {
+        "TargetOriginId": "humblagga.com.s3-website-us-east-1.amazonaws.com",
+        "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+                "Forward": "none"
+            },
+            "Headers": {
+                "Quantity": 0
+            },
+            "QueryStringCacheKeys": {
+                "Quantity": 0
+            }
+        },
+        "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "ViewerProtocolPolicy": "redirect-to-https",
+        "MinTTL": 0,
+        "AllowedMethods": {
+            "Quantity": 2,
+            "Items": [
+                "HEAD",
+                "GET"
+            ],
+            "CachedMethods": {
+                "Quantity": 2,
+                "Items": [
+                    "HEAD",
+                    "GET"
+                ]
+            }
+        },
+        "SmoothStreaming": false,
+        "DefaultTTL": 86400,
+        "MaxTTL": 31536000,
+        "Compress": false,
+        "LambdaFunctionAssociations": {
+            "Quantity": 0
+        },
+        "FieldLevelEncryptionId": ""
+    },
+    "CacheBehaviors": {
+        "Quantity": 0
+    },
+    "CustomErrorResponses": {
+        "Quantity": 0
+    },
+    "Comment": "My First Cloudfront Distribution",
+    "Logging": {
+        "Enabled": false,
+        "IncludeCookies": false,
+        "Bucket": "",
+        "Prefix": ""
+    },
+    "PriceClass": "PriceClass_100",
+    "Enabled": true,
+    "ViewerCertificate": {
+        "CloudFrontDefaultCertificate": false,
+        "MinimumProtocolVersion": "TLSv1",
+        "ACMCertificateArn": "arn:aws:acm:us-east-1:333427308013:certificate/facfbcc0-8932-4e4b-9825-477976cb76a5",
+        "SSLSupportMethod": "sni-only"
+    },
+    "Restrictions": {
+        "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+        }
+    },
+    "WebACLId": "",
+    "HttpVersion": "http2",
+    "IsIPV6Enabled": true
+}

@@ -1,0 +1,43 @@
+{
+    "Comment": "add cname record for ssl certificate",
+    "Changes": [
+      {
+        "Action": "CREATE",
+        "ResourceRecordSet": {
+          "Name": "_4bb1c08e2e24f5c937fdd3123eaf64af.humblagga.com.",
+          "Type": "CNAME",
+          "TTL": 60,
+          "ResourceRecords": [
+            {
+              "Value": "_77ff39b5353d459a83396e52bafd737e.vybhcgkthd.acm-validations.aws."
+            }
+          ]
+        }
+      },
+      {
+        "Action": "CREATE",
+        "ResourceRecordSet": {
+          "Name": "_a73f63b8210dc35f465c6ca5b4609aa1.www.humblagga.com.",
+          "Type": "CNAME",
+          "TTL": 60,
+          "ResourceRecords": [
+            {
+              "Value": "_1edf7512b4dc15792c5c332ed9e5ce47.vybhcgkthd.acm-validations.aws."
+            }
+          ]
+        }
+      },
+      {
+        "Action": "UPSERT",
+        "ResourceRecordSet": {
+            "Name": "humblagga.com",
+            "Type": "A",
+            "AliasTarget":{
+                "HostedZoneId": "Z3AQBSTGFYJSTF",
+                "DNSName": "s3-website-us-east-1.amazonaws.com.",
+                "EvaluateTargetHealth": false
+            }
+        }
+      }
+    ]
+  }
